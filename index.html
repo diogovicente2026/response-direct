@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dia das Crianças Mágico – 40 ideias para um dia inesquecível</title>
+<meta name="description" content="40 ideias criativas, simples e divertidas para transformar o Dia das Crianças em um dia mágico e inesquecível para a sua família.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#ff4fa3; --yellow:#ffd23f; --blue:#27b6ff; --green:#3ddc84;
+  --purple:#8a4fff; --orange:#ff8a2b; --red:#ff4d4d;
+  --ink:#2b1b5a; --paper:#fffaf0; --white:#fff;
+  --radius:28px;
+  --shadow:0 8px 0 rgba(43,27,90,.15);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Baloo 2',cursive;line-height:1.1}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+section{padding:80px 0;position:relative}
+.btn{display:inline-block;font-family:'Baloo 2',cursive;font-weight:800;font-size:1.25rem;text-decoration:none;
+  background:var(--yellow);color:var(--ink);padding:16px 34px;border-radius:999px;border:4px solid var(--ink);
+  box-shadow:0 6px 0 var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translateY(3px);box-shadow:0 3px 0 var(--ink)}
+.btn:active{transform:translateY(6px);box-shadow:0 0 0 var(--ink)}
+.btn.pink{background:var(--pink);color:#fff}
+.tag{display:inline-block;color:var(--ink);background:var(--white);border:3px solid var(--ink);border-radius:999px;padding:4px 16px;font-weight:800;font-size:.9rem}
+.title{text-align:center;font-size:clamp(2rem,5vw,3.2rem);margin-bottom:12px}
+.sub{text-align:center;max-width:620px;margin:0 auto 44px;font-size:1.1rem}
+.wave{display:block;width:100%;height:60px;position:absolute;left:0;bottom:-1px}
+
+/* top bar */
+.top{background:var(--ink);color:#fff;text-align:center;padding:8px 16px;font-weight:800;font-size:.95rem}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--purple),var(--pink) 55%,var(--orange));color:#fff;padding:70px 0 130px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);text-shadow:4px 4px 0 rgba(43,27,90,.35);margin:14px 0 18px}
+.hero h1 span{color:var(--yellow)}
+.hero p{font-size:1.2rem;margin-bottom:28px;max-width:520px}
+.hero .note{margin-top:16px;font-size:.95rem;opacity:.95}
+.cover{position:relative;aspect-ratio:1;max-width:420px;margin-inline:auto;width:100%}
+.cover .card{position:absolute;inset:8%;background:var(--white);color:var(--ink);border:5px solid var(--ink);border-radius:36px;
+  box-shadow:12px 12px 0 var(--ink);transform:rotate(-4deg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;
+  background:linear-gradient(180deg,#fff 0 55%,#fff3c4 55%)}
+.cover .big{font-family:'Baloo 2';font-weight:800;font-size:6.5rem;line-height:.9;color:var(--pink);text-shadow:4px 4px 0 var(--yellow)}
+.cover .card b{font-family:'Baloo 2';font-size:1.6rem}
+.cover .card small{font-weight:800}
+.float{position:absolute;font-size:3rem;animation:bob 3.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-16px) rotate(8deg)}}
+.f1{top:-2%;left:2%}.f2{top:8%;right:-2%;animation-delay:.5s}.f3{bottom:6%;left:-4%;animation-delay:1s}.f4{bottom:-2%;right:6%;animation-delay:1.5s}.f5{top:42%;right:-6%;animation-delay:2s;font-size:2.2rem}
+
+/* benefits */
+.benefits{background:var(--paper)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.benefit{background:var(--white);border:4px solid var(--ink);border-radius:var(--radius);padding:28px 24px;text-align:center;box-shadow:var(--shadow);transition:transform .2s}
+.benefit:hover{transform:translateY(-6px) rotate(-1deg)}
+.benefit .ico{font-size:3rem;display:block;margin-bottom:8px}
+.benefit h3{font-size:1.5rem;margin-bottom:6px}
+.benefit:nth-child(1){background:#e8f7ff}.benefit:nth-child(2){background:#fff0f7}.benefit:nth-child(3){background:#eafff2}.benefit:nth-child(4){background:#fff6df}
+
+/* ideas */
+.ideas{background:var(--blue);color:var(--ink)}
+.ideas .title{color:#fff;text-shadow:3px 3px 0 var(--ink)}
+.ideas .sub{color:#fff;font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
+.filters button{font:800 1rem 'Nunito';border:3px solid var(--ink);background:var(--white);color:var(--ink);padding:8px 18px;border-radius:999px;cursor:pointer;box-shadow:0 4px 0 var(--ink);transition:.15s}
+.filters button:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--yellow)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.idea{background:var(--white);border:4px solid var(--ink);border-radius:24px;padding:18px 18px 20px;box-shadow:0 6px 0 var(--ink);position:relative;transition:transform .2s}
+.idea:hover{transform:translateY(-5px) rotate(1deg)}
+.idea .n{position:absolute;top:-14px;left:-10px;background:var(--c);color:#fff;border:3px solid var(--ink);border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font:800 1.1rem 'Baloo 2'}
+.idea .e{font-size:2.4rem;display:block;text-align:right}
+.idea h3{font-size:1.2rem;margin:2px 0 4px}
+.idea p{font-size:.95rem}
+.idea .cat{display:inline-block;margin-top:10px;background:var(--c);color:#fff;font-weight:800;font-size:.75rem;padding:2px 10px;border-radius:999px;border:2px solid var(--ink)}
+.idea.hide{display:none}
+.c-out{--c:var(--green)}.c-cook{--c:var(--orange)}.c-art{--c:var(--pink)}.c-sci{--c:var(--purple)}.c-fam{--c:var(--red)}
+
+/* how */
+.how{background:var(--yellow)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;counter-reset:s}
+.step{background:var(--white);border:4px solid var(--ink);border-radius:var(--radius);padding:36px 22px 24px;text-align:center;position:relative;box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-24px;left:50%;transform:translateX(-50%);background:var(--pink);color:#fff;border:4px solid var(--ink);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font:800 1.4rem 'Baloo 2'}
+.step h3{font-size:1.4rem;margin-bottom:6px}
+
+/* offer */
+.offer{background:linear-gradient(160deg,var(--green),var(--blue));text-align:center}
+.offer-box{background:var(--white);border:5px solid var(--ink);border-radius:40px;box-shadow:12px 12px 0 var(--ink);padding:44px 28px;max-width:720px;margin:auto}
+.offer-box ul{list-style:none;padding:0;text-align:left;max-width:460px;margin:22px auto 28px}
+.offer-box li{padding:8px 0 8px 40px;position:relative;font-weight:700}
+.offer-box li::before{content:"⭐";position:absolute;left:0}
+.offer-box h2{font-size:clamp(1.9rem,4.5vw,2.8rem)}
+
+/* faq */
+.faq{background:var(--paper)}
+details{background:var(--white);border:4px solid var(--ink);border-radius:20px;padding:16px 22px;margin:0 auto 14px;max-width:760px;box-shadow:0 5px 0 var(--ink)}
+summary{font:800 1.2rem 'Baloo 2';cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--pink)}
+details[open] summary::after{content:"－"}
+details p{margin-top:10px}
+
+footer{background:var(--ink);color:#fff;text-align:center;padding:36px 16px;font-size:.95rem}
+
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .hero p{margin-inline:auto}
+  .cover{max-width:320px}
+  section{padding:60px 0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="top">🎈 Faltam poucos dias para o Dia das Crianças – comece a planejar agora!</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">🎉 Guia para pais, mães e responsáveis</span>
+      <h1>Dia das Crianças <span>Mágico</span></h1>
+      <p><strong>40 ideias</strong> simples, baratas e cheias de diversão para criar um dia inesquecível – sem complicação e sem gastar muito.</p>
+      <a class="btn" href="#oferta">Quero meu dia mágico!</a>
+      <p class="note">✨ Ideias para crianças de várias idades, dentro e fora de casa.</p>
+    </div>
+    <div class="cover" aria-hidden="true">
+      <div class="card"><small>GUIA</small><div class="big">40</div><b>ideias para um dia<br>inesquecível</b></div>
+      <span class="float f1">🎈</span><span class="float f2">⭐</span><span class="float f3">🌈</span><span class="float f4">🎁</span><span class="float f5">🦄</span>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path fill="#fffaf0" d="M0 30c120 30 240 30 360 0s240-30 360 0 240 30 360 0 240-30 360 0v30H0z"/></svg>
+</header>
+
+<section class="benefits">
+  <div class="wrap">
+    <h2 class="title">Por que vai ser mágico? ✨</h2>
+    <p class="sub">Menos pressão, mais memórias. Tudo pensado para caber na sua rotina e no seu bolso.</p>
+    <div class="grid3">
+      <div class="benefit"><span class="ico">💸</span><h3>Econômico</h3><p>Ideias feitas com materiais que você já tem em casa.</p></div>
+      <div class="benefit"><span class="ico">⏱️</span><h3>Rápido de montar</h3><p>Passo a passo direto ao ponto, sem preparação demorada.</p></div>
+      <div class="benefit"><span class="ico">👨‍👩‍👧‍👦</span><h3>Para toda a família</h3><p>Momentos para brincar juntos, de verdade, sem telas.</p></div>
+      <div class="benefit"><span class="ico">🧠</span><h3>Estimula e diverte</h3><p>Criatividade, movimento e descobertas em cada atividade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ideas" id="ideias">
+  <div class="wrap">
+    <h2 class="title">As 40 ideias mágicas 🎠</h2>
+    <p class="sub">Escolha uma categoria e inspire-se. Misture algumas ideias e monte o seu dia perfeito!</p>
+    <div class="filters" role="group" aria-label="Filtrar ideias por categoria">
+      <button data-f="all" aria-pressed="true">🌟 Todas (40)</button>
+      <button data-f="out" aria-pressed="false">🌳 Ao ar livre</button>
+      <button data-f="cook" aria-pressed="false">🍪 Cozinha divertida</button>
+      <button data-f="art" aria-pressed="false">🎨 Arte e criação</button>
+      <button data-f="sci" aria-pressed="false">🔬 Descobertas</button>
+      <button data-f="fam" aria-pressed="false">💞 Em família</button>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <h2 class="title">Como funciona? 🚀</h2>
+    <p class="sub">Em três passos você monta o dia mais legal do ano.</p>
+    <div class="steps">
+      <div class="step"><h3>Escolha</h3><p>Navegue pelas 40 ideias e separe as favoritas da criançada.</p></div>
+      <div class="step"><h3>Prepare</h3><p>Reúna os materiais simples e monte o cenário em poucos minutos.</p></div>
+      <div class="step"><h3>Divirta-se</h3><p>Brinque junto, registre os sorrisos e guarde as memórias.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <div class="offer-box">
+      <span class="tag">🎁 Tudo em um só lugar</span>
+      <h2>Garanta o seu Dia das Crianças Mágico</h2>
+      <ul>
+        <li>40 ideias organizadas por categoria</li>
+        <li>Atividades para dentro e fora de casa</li>
+        <li>Materiais simples e fáceis de encontrar</li>
+        <li>Sugestões para montar um roteiro do dia</li>
+      </ul>
+      <!-- TODO: trocar o href pelo link de checkout/WhatsApp -->
+      <a class="btn pink" href="#" id="cta">Quero meu guia agora!</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2 class="title">Dúvidas frequentes 🤔</h2>
+    <p class="sub">Ainda com alguma pergunta? Veja as respostas rápidas.</p>
+    <details><summary>Para qual idade são as ideias?</summary><p>Há opções para diferentes idades. Muitas atividades podem ser adaptadas para crianças menores ou maiores.</p></details>
+    <details><summary>Preciso comprar muitos materiais?</summary><p>Não. A maioria das ideias usa itens comuns de casa, como papel, tinta, panelas e lençóis.</p></details>
+    <details><summary>Dá para fazer em apartamento?</summary><p>Sim! Há muitas ideias para dentro de casa, e as de área externa podem ir para a varanda ou uma praça próxima.</p></details>
+    <details><summary>Posso fazer com mais de uma criança?</summary><p>Claro. Várias ideias funcionam muito bem com irmãos, primos e amiguinhos.</p></details>
+  </div>
+</section>
+
+<footer>
+  <p>🎈 Dia das Crianças Mágico – 40 ideias para criar um dia inesquecível.</p>
+  <p>Feito com carinho para famílias que amam brincar.</p>
+</footer>
+
+<script>
+const ideas=[
+// ao ar livre
+["out","🏴‍☠️","Caça ao tesouro no quintal","Esconda pistas e um baú de doces para a turma descobrir."],
+["out","🧺","Piquenique de contos","Estenda uma toalha na grama com lanchinhos e histórias."],
+["out","💦","Guerra de balões de água","Refresque o dia com muita risada e molhação."],
+["out","🪁","Dia de pipa","Monte ou compre uma pipa e vá para um lugar aberto."],
+["out","🫧","Festival de bolhas de sabão","Faça bolhas gigantes com água, detergente e arames."],
+["out","🏁","Mini olimpíadas","Corrida do ovo na colher, saco e cabo de guerra."],
+["out","🌱","Plantar uma sementinha","Cada criança planta e batiza a sua plantinha."],
+["out","🔭","Safári urbano","Saia com uma lupa para achar insetos, folhas e flores."],
+// cozinha
+["cook","🍕","Pizza montada por elas","Cada criança decora a própria mini pizza."],
+["cook","🧁","Cupcakes decorados","Granulados, confeitos e muita criatividade."],
+["cook","🍓","Espetinhos de frutas coloridas","Um arco-íris no palito, saudável e lindo."],
+["cook","🍿","Cineminha com pipoca","Pipoca, almofadas e o filme favorito da turma."],
+["cook","🍦","Bar de sorvete","Bolas de sorvete com coberturas à vontade."],
+["cook","🍪","Biscoitos pintados","Decore com glacê e dê de presente depois."],
+["cook","🥞","Café da manhã temático","Panquecas em formatos de bichinhos e estrelas."],
+["cook","🧃","Lanchonete das crianças","Elas viram chefs e atendem a família."],
+// arte
+["art","🎨","Pintura com as mãos","Papel grande, tinta lavável e mãos à obra."],
+["art","🪄","Fantasias com sucata","Capas, coroas e varinhas feitas com papelão."],
+["art","🎭","Teatro de fantoches","Meias viram personagens de uma história inventada."],
+["art","🖍️","Mural gigante colaborativo","Uma parede de papel para todo mundo desenhar."],
+["art","📿","Oficina de pulseiras","Miçangas e fios para criar acessórios únicos."],
+["art","🐚","Pintura de pedrinhas","Pedras decoradas que viram bichinhos."],
+["art","🎤","Show de talentos","Cantar, dançar, contar piada: todo mundo brilha."],
+["art","📸","Estúdio de fotos divertido","Props, adereços e fundo colorido para posar."],
+// descobertas
+["sci","🌋","Vulcão de bicarbonato","Uma erupção colorida com vinagre e corante."],
+["sci","🧪","Slime caseiro","Mexe, estica e diverte (com supervisão)."],
+["sci","🌈","Arco-íris na água","Experimento com papel toalha e canetinhas."],
+["sci","🔦","Teatro de sombras","Lanterna, mãos e silhuetas na parede."],
+["sci","🚀","Foguete de garrafa PET","Lance o foguete com água e ar."],
+["sci","🧲","Caça aos ímãs","Descubra o que o ímã atrai ou não."],
+["sci","⭐","Noite das estrelas","Observe o céu e invente constelações."],
+["sci","🧩","Detetive mirim","Um mistério para resolver com pistas pela casa."],
+// família
+["fam","⛺","Cabana na sala","Lençóis, almofadas e luzinhas para dormir de acampamento."],
+["fam","🎲","Tarde de jogos de tabuleiro","Todos juntos, sem celular, só diversão."],
+["fam","💌","Cartinhas de carinho","Cada um escreve o que ama no outro."],
+["fam","🕺","Festa do pijama dançante","Playlist favorita e passos malucos."],
+["fam","📖","Contação de histórias","Pai e mãe fantasiados contam um conto."],
+["fam","🎁","Surpresa: o dia do 'sim'","Um momento em que a criança escolhe a brincadeira."],
+["fam","📷","Álbum de memórias","Imprima fotos e monte um álbum juntos."],
+["fam","🌟","Cápsula do tempo","Guarde desenhos e recados para abrir no futuro."]
+];
+const names={out:"Ao ar livre",cook:"Cozinha",art:"Arte",sci:"Descobertas",fam:"Em família"};
+const box=document.getElementById('cards');
+box.innerHTML=ideas.map((d,i)=>`<article class="idea c-${d[0]}" data-c="${d[0]}"><span class="n">${i+1}</span><span class="e" aria-hidden="true">${d[1]}</span><h3>${d[2]}</h3><p>${d[3]}</p><span class="cat">${names[d[0]]}</span></article>`).join('');
+const btns=document.querySelectorAll('.filters button');
+btns.forEach(b=>b.addEventListener('click',()=>{
+  btns.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;
+  document.querySelectorAll('.idea').forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f));
+}));
+</script>
+</body>
+</html>
