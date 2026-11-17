@@ -380,8 +380,16 @@ body { margin: 0; color: var(--h-ink); padding-bottom: 96px; }
 .fb-card.has-img { min-height: 0; padding: 0; border: 0; background: transparent; overflow: hidden; border-radius: 14px; box-shadow: 0 10px 24px -14px rgba(0,0,0,.45); align-self: flex-start; }
 .fb-card.has-img:nth-child(even) { background: transparent; }
 </style>
+<!-- Meta Pixel (dataset 1519915270199731) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1519915270199731');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Protocolo Fim do Latido',value:14.97,currency:'BRL'});
+</script>
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1519915270199731&ev=PageView&noscript=1"></noscript>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <symbol id="i-x" viewBox="0 0 18 18"><path d="M4 4l10 10M14 4L4 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
@@ -680,5 +688,26 @@ body { margin: 0; color: var(--h-ink); padding-bottom: 96px; }
 
 </script>
 
+<script>
+/* Rastreio: repassa parametros do anuncio ao checkout e registra cliques (eventos proprios, sem duplicar o "Iniciar finalizacao" da Cakto) */
+(function () {
+  var KEYS = ['fbclid','utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck'];
+  var qs = new URLSearchParams(window.location.search);
+  var fwd = new URLSearchParams();
+  KEYS.forEach(function (k) { if (qs.get(k)) fwd.set(k, qs.get(k)); });
+  var extra = fwd.toString();
+  var links = document.querySelectorAll('a[href*="pay.cakto.com.br"]');
+  Array.prototype.forEach.call(links, function (a) {
+    if (extra) { a.href = a.href + (a.href.indexOf('?') > -1 ? '&' : '?') + extra; }
+  });
+  document.addEventListener('click', function (ev) {
+    var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+    if (!a || !window.fbq) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('pay.cakto.com.br') > -1) { fbq('trackCustom', 'ClickCheckout'); }
+    else if (href === '#comprar') { fbq('trackCustom', 'ClickCTA'); }
+  }, true);
+})();
+</script>
 </body>
 </html>
